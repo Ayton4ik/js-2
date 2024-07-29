@@ -1,23 +1,31 @@
-const studentForm = document.getElementById('studentForm');
-const studentsTableBody = document.getElementById('studentsTable').querySelector('tbody');
 
-studentForm.addEventListener('submit', (e) => {
-e.preventDefault();
+// console.log('Логування до таймауту');
 
+// setTimeout((value) => {
+//     console.log(`Виклик функції через ${value} мс`);
+// },  1000, '1000')
 
-    const form = e.currentTarget
-
-    const student = {
-        id: Date.now(),
-        firstName: form.elements.firstName.value,
-        lastName: form.elements.lastName.value,
-        age: form.elements.age.value,
-        course: form.elements.course.value,
-        faculty: form.elements.faculty.value
-        }
+// console.log('Логування після таймауту');
 
 
 
-        localStorage.setItem('students', students)
- form.reset();
-});
+
+
+// setInterval(() => {
+//     console.log(`виклик функції`)
+// }, 1000)
+
+
+
+let num = 0;
+
+const intervalNumId = setInterval(() => {
+    console.log(`Ваше число ${num}`);
+    num += 1;
+
+    if(num > 10){
+        clearInterval(intervalNumId);
+    }
+}, 1000);
+
+console.log(intervalNumId);
