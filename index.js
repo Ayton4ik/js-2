@@ -17,15 +17,20 @@
 
 
 
-let num = 0;
+// let num = 0;
 
-const intervalNumId = setInterval(() => {
-    console.log(`Ваше число ${num}`);
-    num += 1;
+// const intervalNumId = setInterval(() => {
+//     console.log(`Ваше число ${num}`);
+//     num += 1;
 
-    if(num > 10){
-        clearInterval(intervalNumId);
-    }
-}, 1000);
+//     if(num > 10){
+//         clearInterval(intervalNumId);
+//     }
+// }, 1000);
 
-console.log(intervalNumId);
+// console.log(intervalNumId);
+
+
+
+
+
