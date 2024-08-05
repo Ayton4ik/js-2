@@ -31,3 +31,17 @@ const refs = {
     setTimeout(() => {
         confirm('Підпишіться');
     }, 5000)
+
+
+let confirmCount = 0;
+let hasSubscribed
+
+
+const intervalId = setInterval(() => {
+    if (confirmCount === 3 || hasSubscribed) {
+        clearInterval(intervalId);
+    } 
+    hasSubscribed = confirm('Підпишіться');
+    confirmCount += 1;
+
+})
